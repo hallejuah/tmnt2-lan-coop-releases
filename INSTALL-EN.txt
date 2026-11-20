@@ -1,4 +1,4 @@
-TMNT 2: Battle Nexus — LAN Co-op 0.3.2 Alpha
+TMNT 2: Battle Nexus — LAN Co-op 0.3.5 Alpha
 By x23sunder — https://boosty.to/x23sunder/
 Releases: https://github.com/hallejuah/tmnt2-lan-coop-releases/releases
 
@@ -7,7 +7,7 @@ PC game copies. The game is not included. This is an experimental build;
 a complete natural two-player campaign has not been validated.
 
 Install or update
-1. Download TMNT2-LAN-Coop-v0.3.2-alpha.zip. It contains one TMNT2LanLauncher.exe.
+1. Download TMNT2-LAN-Coop-v0.3.5-alpha.zip. It contains one TMNT2LanLauncher.exe.
 2. Put the same EXE beside TMNT2.exe on BOTH PCs. Use Browse if needed.
    No PS1/CMD scripts or separate DLL installation is required.
 3. To update, close both games/launchers and replace the launcher EXE.
@@ -16,9 +16,13 @@ Install or update
    components into %LOCALAPPDATA%\TMNT2CoopLauncher\runtime.
    The regular game and its saves are preserved.
 
+The launcher window has a fixed size, without maximize or form scrolling.
+Game settings open separately. Select RU/EN in the main window.
+
 Connect
-1. Connect gamepads first. Select local input, resolution, window mode, VSync
-   and the optional PING / WAIT / FPS panel before starting.
+1. Connect gamepads first. Open Game settings and select local input,
+   resolution, window mode, VSync and the optional PING / WAIT / FPS panel.
+   Select Apply. Cancel or closing the dialog discards changes.
    PCs can use different display settings. Change them between sessions.
 2. PC1 selects Host game. PC2 selects Join game and enters PC1's displayed IPv4.
    Allow the prepared TMNT2.exe on the local network, TCP port 27804.
@@ -52,7 +56,7 @@ beside a LAN profile before changing it. Regular game saves are not
 automatically imported. Back up your LAN save before deleting CoopLab.
 
 Problems and test limits
-Use the same version 0.3.2 on both PCs. A checked timer/result/game-state
+Use the same version 0.3.5 on both PCs. A checked timer/result/game-state
 mismatch stops the session and records the reason. Preserve both session
 folders using Logs on BOTH PCs. Include the level, last action and affected PC.
 Closing one game disconnects the peer; begin a new session to play again.
