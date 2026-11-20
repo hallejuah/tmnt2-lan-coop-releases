@@ -1,0 +1,70 @@
+TMNT 2: Battle Nexus — LAN Co-op 0.3.2 Alpha
+By x23sunder — https://boosty.to/x23sunder/
+Releases: https://github.com/hallejuah/tmnt2-lan-coop-releases/releases
+
+Requires two Windows 10/11 PCs, .NET Framework 4.8, the same LAN and compatible
+PC game copies. The game is not included. This is an experimental build;
+a complete natural two-player campaign has not been validated.
+
+Install or update
+1. Download TMNT2-LAN-Coop-v0.3.2-alpha.zip. It contains one TMNT2LanLauncher.exe.
+2. Put the same EXE beside TMNT2.exe on BOTH PCs. Use Browse if needed.
+   No PS1/CMD scripts or separate DLL installation is required.
+3. To update, close both games/launchers and replace the launcher EXE.
+   Keep CoopLab to retain LAN progress.
+4. The launcher prepares a separate CoopLab copy and extracts its embedded
+   components into %LOCALAPPDATA%\TMNT2CoopLauncher\runtime.
+   The regular game and its saves are preserved.
+
+Connect
+1. Connect gamepads first. Select local input, resolution, window mode, VSync
+   and the optional PING / WAIT / FPS panel before starting.
+   PCs can use different display settings. Change them between sessions.
+2. PC1 selects Host game. PC2 selects Join game and enters PC1's displayed IPv4.
+   Allow the prepared TMNT2.exe on the local network, TCP port 27804.
+3. The game shows waiting/connecting, then Player connected and normal startup.
+   The screen follows the launcher's RU/EN choice, also with the ping panel off.
+   Cancel waiting in the launcher or close the game window.
+4. Choose New game or Continue.
+
+Character selection and controls
+PC1 presses Enter first, then PC2. Use arrows to choose and F/Enter to confirm.
+Assign all four unique turtles, at least one to each player, then confirm.
+An already assigned turtle cannot be selected twice.
+
+Default keyboard movement is NumPad 8/4/2/6. Actions follow the game's bindings.
+Configure controls before LAN play. Each PC sends only its own local input.
+Keyboard/gamepad combinations are allowed, but physical gamepad validation
+is incomplete. The camera is shared. Team health is shared by the original
+Battle Nexus rules; scores are separate.
+
+Top-right panel
+PING: estimated TCP round-trip milliseconds, or -- while unavailable.
+WAIT: average time waiting for peer data over about 0.5 seconds. A slower
+      computer can increase this value too.
+FPS: successful local presentations per second. Button-to-display latency
+     is not measured. Disable the panel in Game settings before launching.
+
+Saves
+LAN progress is in CoopLab\tmntsave.dat. Sessions use the host's progress
+and difficulty; audio, display and controls stay local. A backup is created
+beside a LAN profile before changing it. Regular game saves are not
+automatically imported. Back up your LAN save before deleting CoopLab.
+
+Problems and test limits
+Use the same version 0.3.2 on both PCs. A checked timer/result/game-state
+mismatch stops the session and records the reason. Preserve both session
+folders using Logs on BOTH PCs. Include the level, last action and affected PC.
+Closing one game disconnects the peer; begin a new session to play again.
+
+Full natural campaign, all checkpoints, Ride courses, tournaments, natural
+death/respawn and physical gamepads still require manual testing. Technical
+runs with development-triggered stage completion are not manual playthroughs.
+
+Uninstall
+Close the session, back up CoopLab\tmntsave.dat, then remove the launcher EXE
+and CoopLab. Settings, logs and runtime cache are under
+%LOCALAPPDATA%\TMNT2CoopLauncher. The regular game remains in place.
+
+Mod sources remain private. The public repository provides compiled releases,
+instructions and descriptions; no game files are included.
